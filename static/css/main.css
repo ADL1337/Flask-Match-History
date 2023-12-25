@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #31313C;
+}
+p {
+    color: #9E9EB1;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #9E9EB1;
+}
+
+a:link{
+    text-decoration: none;
+    color: #9E9EB1;
+}
+
+#match-list {
+    margin-top: 0px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#winrate {
+    margin-top: 0px;
+    margin-left: 3px;
+}
+
+.matchVictory {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #28344E;
+    color: #9E9EB1;
+}
+#winrate-div {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+#normalWinrate {
+   color: #9E9EB1;
+}
+
+#highWinrate {
+    color: #056303;
+}
+
+#lowWinrate {
+    color: #ad0e00;
+}
+.matchLoss {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #59343B;
+    color: #9E9EB1;
+}
+
+.match-details {
+    margin: 2px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    line-height: 21px;
+    width: 200px;
+}
+
+.champion-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75px;
+}
+
+.summoner-statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 21px;
+    width: 200px;
+}
+
+.champion-icon {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top-portion p {
+    text-align: center;
+    font-size: 24px;
+}
+#level {
+    margin-top: -2px;
+}
+#profile-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    height: 100px;
+    width: 100px;
+}
+#graphics-zone {
+    margin-top: -15px;
+}
+#rank-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+    height: 180px;
+    width: 180px;
+}
+#soloQ {
+    margin-top: -15px
+}
+#summoner-form {
+    text-align: center;
+}
+#search-summoner {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#soloQ-rank, #win-loss {
+    text-align: center;
+    margin-top: -10px;
+}
+#soloQ-rank {
+    font-size: 20px;
+}
+#light-mode-switch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}

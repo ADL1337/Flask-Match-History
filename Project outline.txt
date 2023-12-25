@@ -1,0 +1,73 @@
+config:
+(api_key)
+Used for =>
+    - Summoner
+        - Normal data
+        - Ranked data
+    - Match
+        - End of game stats
+
+
+### Classes ###
+
+## Summoner ##
+
+# Attributes #
+(private) _region
+(private) _summoner_data
+(private) _ranked_data
+
+# Methods #
+(constructor) __init__(self, region, summoner_data, ranked_data)
+=> instanciate a summoner object
+
+# Properties #
+name
+level
+iconId
+puuid
+encryptedId
+summonerId
+platform
+region
+rank => dictionary of rank objects corresponding to flex and solo ranked queues
+
+## Riot API ##
+
+# Attributes #
+(private) _api_key
+
+# Methods #
+match(region, match_id)
+=> creates and returns a match instance with region and match_id
+summoner(region, name)
+=> creates and returns a summoner instance with region and name
+(private) load_api_key()
+=> loads the API key from the config file
+icon_url(iconId)
+=> return icon url (data dragon) from iconId
+
+## Match ##
+
+# Attributes #
+(private) _matchData
+
+# Properties #
+match_duration
+game_mode
+participants
+
+## RankedQueue ##
+
+# Attributes #
+queueType: str (ex: "RANKED_SOLO_5x5")
+tier: str (ex: "DIAMOND")
+rank: str (ex: "IV")
+leaguePoints: int (ex: 69)
+wins: int
+losses: int
+
+# Properties #
+winrate
+rank
+name

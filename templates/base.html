@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<nav>
+    <a href="/">Home</a>
+    <a href="/search">Search</a>
+</nav>
+<body>
+    {% block content %} {% endblock %}
+</body>
+</html>
